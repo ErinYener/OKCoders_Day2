@@ -4,12 +4,20 @@ var mammal = "cat"
 
 console.log("My name is " + name + " and I am " + age + ".");
 
-var drinkingAge = 21-age
+var counter = 1
 
-if (age < 21) {
+for (var counter = 1; age <= (21 - counter); counter ++)
+  var tempAge = age + counter;
+  console.log ("In " + counter + " years, I will be " + tempAge + ".");
+
+var drinkingAge = 21-tempAge;
+
+if (tempAge < 21) {
   console.log("I can have a beer in " + drinkingAge + " years.");
-} else if (mammal != "human") {
-  console.log ("But cats can't drink.");
 } else {
-  console.log ("Wait...I'm a cat.")
+  console.log ("Wait...I'm a cat.");
+}
+
+if (mammal != "human") {
+  console.log ("But cats can't drink.");
 }
