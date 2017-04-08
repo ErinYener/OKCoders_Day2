@@ -6,13 +6,14 @@ console.log("My name is " + name + " and I am " + age + ".");
 
 var counter = 1
 
-for (var counter = 1; age <= (21 - counter); counter ++)
+for (var counter = 1; age <= (21-counter); counter ++){
   var tempAge = age + counter;
   console.log ("In " + counter + " years, I will be " + tempAge + ".");
+}
 
-var drinkingAge = 21-tempAge;
+var drinkingAge = 21-age;
 
-if (tempAge < 21) {
+if (age < 21) {
   console.log("I can have a beer in " + drinkingAge + " years.");
 } else {
   console.log ("Wait...I'm a cat.");
